@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>CALCULATOR - ALGORYTHMS - FUNCTIONAL PROGRAMING</title>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="calc.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper-solutions">
+        <ul class="navbar-nav">
+            <p> OTHER SOLUTIONS: </p>
+            <li class="nav-item">
+                <a class='nav-link' href="https://medium.com/@ethanryan/lets-make-a-javascript-calculator-a81186cb912f"> SOLUTION I</a>
+            </li>
+            <li class="nav-item">
+                <a class='nav-link' href="https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/"> SOLUTION II</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12" id="screen">
+                0
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- OPERATORS + AC -->
+            <div class="col-12">
+                <input type='submit' class="btn btn-custom btn-dark" id="+" onclick='getSign(this.id)' value="+">
+                <input type='submit' class="btn btn-custom btn-dark" id="-" onclick='getSign(this.id)' value="-">
+                <input type='submit' class="btn btn-custom btn-dark" id="*" onclick='getSign(this.id)' value="*">
+                <input type='submit' class="btn btn-custom btn-dark" id="/" onclick='getSign(this.id)' value="/">
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' id="AC" value='AC'>
+            </div>
+        </div>
+        <!-- DIGITS -->
+        <div class="row" id='digits'>
+
+            <div class="col-12">
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=1>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=2>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=3>
+            </div>
+
+            <div class="col-12">
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=4>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=5>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=6>
+            </div>
+
+            <div class="col-12">
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=7>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=8>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=9>
+            </div>
+
+            <!-- 0 . EQUAL -->
+            <div class="col-12">
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=.>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=0>
+                <input type='submit' class="btn btn-custom btn-dark" onclick='opChrono(math, id)' id="eq" value='='>
+            </div>
+
+        </div>
+
+        <script src="calculator-app.js"></script>
+</body>
+
+</html>
