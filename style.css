@@ -1,63 +1,120 @@
 .wrapper-solutions {
     width: 100%;
-    background-color: snow;
-    padding: 25px;
+}
+
+body {
+    background-color: darkorchid !important;
+}
+
+#the-calculator {
+    width: 320px;
+    margin-top: 25px;
 }
 
 .wrapper-solutions p {
-    margin-top: 10px;
-    padding-left: 10px;
-    text-decoration: underline;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
 
-.nav-item {
-    margin-left: 50px;
+.nav-item a {
+    text-align: center;
     font-size: 10px;
+    color: whitesmoke !important;
+    padding: 0;
+    margin: 0;
 }
 
 #the-other-solutions {
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
+    padding-right: 100px;
 }
 
-.container,
-body {
-    background-color: rgb(0, 150, 255);
+.main-heading {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
 
-#screen {
-    border-top: 1px solid gray;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    font-size: 21px;
-    line-height: 2.5;
-    background-color: rgb(228, 228, 228);
-    height: 60px;
-    color: rgb(26, 26, 26);
+.txt-heading {
+    width: 100%;
+    display: block;
+    margin-top: 2.5px;
+    letter-spacing: 1.5px;
 }
 
-#digits {
-    margin-left: 55px;
-    margin-top: 10px;
-    padding-bottom: 25px;
+.heading-one {
+    color: rgb(39, 39, 39);
+    font-size: 1.1rem;
+    padding-bottom: 2px;
+    background-color: whitesmoke;
+    padding-top: 2px;
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    border-radius: 20px;
 }
 
-.btn-custom {
-    width: 55px;
-    height: 55px;
-    margin: 2.5px;
-    font-family: 'Crimson Text', serif;
-    background: linear-gradient(rgb(255, 255, 240), rgb(80, 120, 200));
-    font-size: 1.2rem;
+.heading-two,
+.heading-three {
+    color: snow;
+    font-weight: 800;
+}
+
+.heading-three {}
+
+.wrapper-einstein {
+    width: 70px;
+    margin: 10px auto 30px auto;
+}
+
+.wrapper-einstein img {
     border-radius: 50%;
 }
 
-footer {
-    height: 100px;
-    width: 100%;
-    color: darkgray;
-    background-color: rgb(15, 15, 15);
-    position: fixed;
-    bottom: 0;
+#screen {
+    border: 0.2px solid snow;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 2;
+    background-color: rgb(54, 54, 54);
+    height: 40px;
+    color: whitesmoke;
+    width: 96%;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+#digits-row,
+#screen-row,
+#operators-row {
+    justify-content: center;
+}
+
+.btn-custom {
+    width: 45px;
+    height: 45px;
+    margin: 3.5px;
+    font-family: 'Crimson Text', serif;
+    background: linear-gradient(rgb(255, 25, 240), rgb(3, 0, 4));
+    font-size: 1.1rem;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-nav {
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+    }
 }
