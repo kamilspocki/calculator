@@ -31,47 +31,66 @@
         </ul>
     </div>
 
-    <div class="container">
+    <div class="wrapper-einstein">
+        <img src="img/fun.jpg" class='img-fluid'>
+    </div>
 
-        <div class="row">
-            <div class="col-12" id="screen">
+    <h1 class="main-heading">
+
+        <span class="txt-heading heading-one">
+                MY ALGORYTHM
+        </span>
+
+        <span class="txt-heading heading-two">
+           FOR KEEPING THE RIGHT ORDER OF
+        </span>
+
+        <span class="txt-heading heading-three">
+             MATHEMATICAL OPERATIONS
+       </span>
+
+    </h1>
+
+    <div class="container" id='the-calculator'>
+
+        <div class="row" id='screen-row'>
+            <div id="screen">
                 0
             </div>
         </div>
 
-        <div class="row">
-            <!-- OPERATORS + AC -->
-            <div class="col-12">
-                <input type='submit' class="btn btn-custom btn-dark" id="+" onclick='getSign(this.id)' value="+">
-                <input type='submit' class="btn btn-custom btn-dark" id="-" onclick='getSign(this.id)' value="-">
-                <input type='submit' class="btn btn-custom btn-dark" id="*" onclick='getSign(this.id)' value="*">
-                <input type='submit' class="btn btn-custom btn-dark" id="/" onclick='getSign(this.id)' value="/">
-                <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' id="AC" value='AC'>
-            </div>
-        </div>
-        <!-- DIGITS -->
-        <div class="row" id='digits'>
+        <div class="row" id='operators-row'>
 
-            <div class="col-12">
+            <input type='submit' class="btn btn-custom btn-dark" id="+" onclick='getSign(this.id)' value="+">
+            <input type='submit' class="btn btn-custom btn-dark" id="-" onclick='getSign(this.id)' value="-">
+            <input type='submit' class="btn btn-custom btn-dark" id="*" onclick='getSign(this.id)' value="*">
+            <input type='submit' class="btn btn-custom btn-dark" id="/" onclick='getSign(this.id)' value="/">
+
+            <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' id="AC" value='AC'>
+
+        </div>
+
+        <div class="row" id='digits-row'>
+
+            <div class='digits'>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=1>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=2>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=3>
             </div>
 
-            <div class="col-12">
+            <div class='digits'>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=4>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=5>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=6>
             </div>
 
-            <div class="col-12">
+            <div class='digits'>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=7>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=8>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=9>
             </div>
 
-            <!-- 0 . EQUAL -->
-            <div class="col-12">
+            <div class='digits'>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=.>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='getValue(this.value)' value=0>
                 <input type='submit' class="btn btn-custom btn-dark" onclick='opChrono(math, id)' id="eq" value='='>
